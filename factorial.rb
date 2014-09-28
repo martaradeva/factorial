@@ -5,7 +5,6 @@ class Fixnum
 end
 
 def kth_factorial(k, n)
-  k.inspect
   if not k.is_a? Integer or not n.is_a? Integer then puts "Invalid input. Both K and N need to be Integer numbers!"
     elsif (n == 0) then puts "0"
       else
