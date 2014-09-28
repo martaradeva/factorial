@@ -11,9 +11,9 @@ def kth_factorial(k, n)
         f = n.fact_iterative
         result = 1
         for i in 1..k do result = result*f end
-         puts neat_output(result)
+         # puts neat_output(result)
   end
-   # puts result
+   puts result
 end 
 
 def neat_output(long_num)
