@@ -5,19 +5,17 @@ class Fixnum
 end
 
 def kth_factorial(k, n)
-  if not k.is_a? Integer or not n.is_a? Integer then puts "Invalid input. Both K and N need to be Integer numbers!"
-    elsif (n == 0) then puts "0"
-      else
-        f = n.fact_iterative
-        result = 1
-        for i in 1..k do result = result*f end
-         # puts neat_output(result)
-  end
-   puts result
+  f = n.fact_iterative
+  result = 1
+  for i in 1..k do result = result*f end
+  puts result
+  # puts neat_output(result) 
+  # Looked for method to format a big number? 
 end 
 
 def neat_output(long_num)
   # converts a long integer to string representing it as a multiple of 10
+  # doesn't work yet :) 
   long_string = long_num.to_s
   counter = 0
   puts long_string[-1,-1]
